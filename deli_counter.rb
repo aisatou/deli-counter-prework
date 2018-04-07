@@ -7,4 +7,5 @@ def line(katz_deli)
     for num in range
       print "#{num + 1}. #{katz_deli[num]} "
     end
+  end
 end
