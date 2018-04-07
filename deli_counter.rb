@@ -3,7 +3,9 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     print "The line is currently: "
-    
+    range = 0..katz_deli.size - 1
+    for num in range
+      print 
   
   
   
