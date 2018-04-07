@@ -1,30 +1,27 @@
-var katzDeli = [];
-
-def takeANumber(katzDeli, name) 
-  katzDeli.push(`${name}`);
-  return (`Welcome, ${name}. You are number ${katzDeli.length} in line.`);
+def take_a_number(katz_deli, name)
+  katz_deli.push(name)
+  puts "Welcome, #{name}. You are number #{katz_deli.size} in line."
 end
 
-def nowServing(katzDeli) 
-  let i = 0;
-  while (i < katzDeli.length) {
-    i++;
-  }
-  if (katzDeli.length === 0) {
-    return "There is nobody waiting to be served!";
-  }
+def now_serving(katz_deli)
+  if katz_deli.length == 0
+    puts "There is nobody waiting to be served!"
   else
-  return (`Currently serving ${katzDeli.shift()}.`);
+    puts "Currently serving #{katz_deli.shift}."
+  end
+
 end
 
-var line = [];
+def line(katz_deli)
+  if katz_deli.length == 0
+    puts "The line is currently empty."
+  else
+    message="The line is currently:"
 
-def currentLine(katzDeli)
-  for (let i = 0; i < katzDeli.length; i++) {
-    line.push(` `+[i+1]+`. ` + katzDeli[i])
-  }
-  if (katzDeli.length === 0) {
-    return "The line is currently empty.";
-  } else
-  return (`The line is currently:` + line);
+    katz_deli.each_with_index do |value, index|
+      message += " #{index.to_i+1}. #{value}"
+    end
+
+    puts "#{message}"
+  end
 end
