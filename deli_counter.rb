@@ -16,3 +16,7 @@ def take_a_number(katz_deli, name)
   puts "Welcome, #{name}. You are number #{katz_deli.size + 1} in line."
   katz_deli.push(name)
 end
+
+def now_serving
+  
+end
