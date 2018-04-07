@@ -12,3 +12,6 @@ def line(katz_deli)
   puts output
 end
 
+def take_a_number(katz_deli, name)
+  
+end
