@@ -5,7 +5,8 @@ def line(katz_deli)
     print "The line is currently: "
     range = 0..katz_deli.size - 1
     for num in range
-      print 
+      print "#{num + 1}. #{katz_deli[num]} "
+    end
   
   
   
