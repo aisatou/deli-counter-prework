@@ -1,5 +1,6 @@
 katz_deli = []
 def line
-  
-  "The line is currently empty."
+  if katz_deli.size = 0
+    puts "The line is currently empty."
+  end
 end
