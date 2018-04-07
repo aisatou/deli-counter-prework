@@ -17,6 +17,6 @@ def take_a_number(katz_deli, name)
   katz_deli.push(name)
 end
 
-def now_serving
-  
+def now_serving(katz_deli, name)
+  puts "Currently serving ."
 end
